@@ -1,0 +1,12 @@
+{
+  "name": "telekom-storefront-staging",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simulated German telecom storefront",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "python3 -m http.server 4173 --bind 127.0.0.1 --directory dist",
+    "test": "node --test",
+    "check:smoke": "node --test tests/storefront-smoke.test.mjs"
+  }
+}
